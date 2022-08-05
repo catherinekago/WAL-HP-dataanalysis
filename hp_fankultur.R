@@ -1,10 +1,10 @@
 library(readxl)
 
-
+# Add your working directory (ADJUST)
 setwd("C:/Users/kathr_/OneDrive/Desktop/HCI Master/2.Semester/WAL/Studie/Datenauswertung")
-excelPath = ("C:/Users/kathr_/OneDrive/Desktop/HCI Master/2.Semester/WAL/Studie/Datenauswertung")
 
-exceldata = read_excel("C:\\Users\\kathr_\\OneDrive\\Desktop\\HCI Master\\2.Semester\\WAL\\Studie\\Datenauswertung\\Survey zur Involvierung in die Harry Potter Fankultur (Antworten).xlsx")                                                                            
+# Retrieve the excel sheet (ADJUST)
+exceldata = read_excel("C:\\Users\\kathr_\\OneDrive\\Desktop\\HCI Master\\2.Semester\\WAL\\Studie\\Survey zur Involvierung in die Harry Potter Fankultur (Antworten).xlsx")                                                                            
 data = data.frame(exceldata)
 
 tidyUpDataframe = function(df){
